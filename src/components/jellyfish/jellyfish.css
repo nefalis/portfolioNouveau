@@ -1,0 +1,227 @@
+
+@keyframes swim {
+    20% {
+        transform: translateY(10px);
+    }
+
+    45% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+@keyframes squash {
+    60% {
+        transform: scaleY(.9);
+    }
+}
+
+@keyframes wave {
+    30% {
+        transform: scaleX(var(--scaleX)) scaleY(var(--scaleY)) rotate(calc('var(--rotate) * -1deg'));
+    }
+}
+
+.jellyfish {
+    font-size: 300px;
+    position: relative;
+    height: 100px;
+    animation: swim 10s ease-in-out infinite;
+    transform-origin: 50% 0;
+    transform: translateY(38px);
+}
+
+.jellyfish .arms {
+    transform-origin: 50% 0;
+    animation: squash 10s ease-in-out infinite;
+}
+
+.jellyfish .arm {
+    position: absolute;
+    width: 7.5px;
+    height: 40px;
+    top:27px;
+    border-radius: 50%;
+    border: 4px solid blue;
+    border-bottom: 4.8px solid transparent;
+    transform-origin: 50% 0;
+    opacity: .4;
+    animation: wave 10s ease-in-out infinite;
+}
+
+
+
+.jellyfish .arm:nth-child(1) {
+    left: 4.5px;
+}
+
+.jellyfish .arm:nth-child(2) {
+    left: 16px;
+
+}
+
+.jellyfish .arm:nth-child(3) {
+    left: 21.5px;
+
+}
+
+.jellyfish .arm:nth-child(4) {
+    left: 28px;
+
+}
+
+.jellyfish .arm:nth-child(5) {
+    left: 34px;
+
+}
+
+.jellyfish .arm:nth-child(6) {
+    left: 11.5px;
+
+}
+
+.jellyfish .arm:nth-child(7) {
+    left: 38px;
+
+}
+
+.jellyfish .arm:nth-child(8) {
+    left: 48.5px;
+}
+
+
+.tentacles {
+    animation: squash 10s ease-in-out infinite;
+}
+
+.tentacles .tentacle {
+    position: absolute;
+    top: 16px;
+    width: 67px;
+    height: 73.5px;
+    border: 1px solid rgb(0, 229, 255);
+    border-bottom: none;
+    border-top: none;
+    border-bottom-left-radius: 10% 50%;
+    border-bottom-right-radius: 10% 50%;
+    border-top-left-radius: 20% 50%;
+    border-top-right-radius: 20% 50%;
+}
+
+.tentacles .tentacle:nth-child(2) {
+    transform: scaleX(.8);
+}
+
+.tentacles .tentacle:nth-child(3) {
+    transform: scaleX(.6);
+}
+
+.tentacles .tentacle:nth-child(4) {
+    transform: scaleX(.4);
+}
+
+.tentacles .tentacle:nth-child(5) {
+    transform: scaleX(.2);
+}
+
+.body {
+    background: blue;
+    width: 73px;
+    height: 40px;
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    position: relative;
+    opacity: .65;
+    transform-origin: 50% 50%;
+    animation: squash 10s ease-in-out infinite;
+}
+
+.body .base {
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    background: blue;
+    bottom: -11px;
+    border-bottom-left-radius: 50% 100%;
+    border-bottom-right-radius: 50% 100%;
+    box-shadow: 19.5px 0 0 blue, 60px 0 0 blue;
+}
+
+
+@keyframes eyes {
+    40% {
+        transform: translateY(-3.7px);
+    }
+
+    60% {
+        transform: translateY(3.7px);
+    }
+}
+
+
+.eyes .eye {
+    width: 7.5px;
+    height: 8.5px;
+    background: white;
+    position: absolute;
+    left: 12.5px;
+    top: 14px;
+    border-radius: 50%;
+    overflow: hidden;
+    transform: translateZ(0);
+
+    border: 2px solid rgba(0, 230, 255, .5);
+}
+
+.eyes .eye:before {
+    content: '';
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    background: darkblue;
+    border-radius: 50%;
+    left: 15%;
+    top: 15%;
+    animation: eyes 10s ease-in-out infinite;
+}
+
+.eyes .eye:after {
+    content: '';
+    position: absolute;
+    width: 25%;
+    height: 25%;
+    background: #fff;
+    border-radius: 50%;
+    left: 25%;
+    top: 25%;
+    box-shadow:3.6px 3.6px 0 -2px white, 6.5px 2px 0 -3px white;
+    animation: eyes 10s ease-in-out infinite;
+    z-index: 1;
+}
+
+.eyes .eye.right {
+    left: 46px;
+}
+
+.eyes .eyelid {
+    width: 100%;
+    height: 100%;
+    background: blue;
+    z-index: 2;
+    position: relative;
+    transform: translateY(-38px);
+    animation: blink 6s ease-in-out infinite;
+}
+
+@keyframes blink {
+    97% {
+        transform: translateY(-38px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}

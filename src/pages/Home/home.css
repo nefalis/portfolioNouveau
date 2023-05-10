@@ -1,0 +1,15 @@
+.home {
+    max-width: 1240px;
+    margin: 10px auto;
+    border-radius: 20px;
+    border: 5px solid lightskyblue;
+
+
+}
+
+.presentation {
+    margin: 40px;
+    font-family: 'Press Start 2P', cursive;
+    /* display: flex;
+    justify-content: center; */
+}

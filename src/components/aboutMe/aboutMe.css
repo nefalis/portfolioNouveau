@@ -1,0 +1,17 @@
+.presentation {
+    border-radius: 20px;
+    border: 10px solid rgb(255, 254, 254);
+    box-shadow: 2px 2px 2px 2px lightgray;
+    background-color: rgb(213, 247, 252);
+    padding: 20px;
+}
+
+.presentation h2 {
+    margin-top: 60px;
+    color: red;
+}
+
+
+.presentation span {
+    display: block;
+}

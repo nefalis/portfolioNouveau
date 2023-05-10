@@ -1,0 +1,112 @@
+.sidebarContainer {
+    width: 350px;
+    min-height: 100vh;
+    border-radius: 20px;
+    border: 5px solid lightskyblue;
+    margin: 10px;
+    /* background-color: black; */
+}
+
+.sidebarContainer a {
+    gap: 10px;
+}
+
+/* nom */
+.nameComponent {
+    margin-bottom: 60px;
+}
+
+/* barre navigation */
+.sidebar {
+    font-size: 18px;
+    color: black;
+    margin-left: 10px;
+    margin-right: 10px;
+    flex-direction: column;
+    font-family: 'Press Start 2P', cursive;
+}
+
+
+
+.sidebar span {
+    align-items: center;
+    display: flex;
+    gap: 20px;
+}
+
+.sidebar svg {
+    font-size: 40px;
+    align-items: center;
+}
+
+
+.sidebar ul {
+    display: flex;
+    flex-direction: column;
+
+    gap: 40px;
+    padding: 0px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: black;
+}
+
+.jellyfishComponent {
+    display: flex;
+    justify-content: center;
+    padding: 60px;
+}
+
+.sidebar li {
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    display: flex;
+    color: black;
+}
+
+.sidebarHome {
+    background-color: #f998cf;
+    margin-right: 30px;
+    border: 2px solid rgb(255, 254, 254);
+    box-shadow: 2px 2px 2px 2px lightgray;
+    border-radius: 20px;
+}
+
+
+
+.sidebarAbout {
+    background-color: #f5f994;
+    margin-left: 30px;
+    border: 2px solid rgb(255, 254, 254);
+    box-shadow: 2px 2px 2px 2px lightgray;
+    border-radius: 20px;
+}
+
+
+
+.sidebarProject {
+    background-color: #7ef8c7;
+    margin-right: 30px;
+    border: 2px solid rgb(255, 254, 254);
+    box-shadow: 2px 2px 2px 2px lightgray;
+    border-radius: 20px;
+}
+
+
+
+.sidebarContact {
+    background-color: #58deff;
+    margin-left: 30px;
+    border: 2px solid rgb(255, 254, 254);
+    box-shadow: 2px 2px 2px 2px lightgray;
+    border-radius: 20px;
+}
+
+/* page active*/
+.sidebar .link-active {
+    color: red;
+    }
