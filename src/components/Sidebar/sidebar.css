@@ -2,8 +2,12 @@
     width: 350px;
     min-height: 100vh;
     border-radius: 20px;
-    border: 5px solid lightskyblue;
+    /* border: 5px solid lightskyblue; */
     margin: 10px;
+    border-radius: 20px;
+    border: 10px solid rgb(255, 254, 254);
+    box-shadow: 2px 2px 2px 2px lightgray;
+    background-color: rgb(213, 247, 252);
     /* background-color: black; */
 }
 
@@ -109,4 +113,4 @@
 /* page active*/
 .sidebar .link-active {
     color: red;
-    }
+}

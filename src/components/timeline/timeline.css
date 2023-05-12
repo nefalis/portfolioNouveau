@@ -18,11 +18,11 @@
 .timelineContent {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     border-radius: 20px;
-    border: 10px solid rgb(241, 245, 245);
+    border: 10px groove rgb(252, 77, 77);
     background-color: #fff;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    /* align-items: flex-end; */
     padding: 15px;
     position: relative;
     width: 400px;
@@ -73,13 +73,22 @@
 
 .timelineContent h2 {
     font-family: 'Press Start 2P', cursive;
+    line-height: 20px;
     font-size: 18px;
     color: red;
+    margin-top: 25px;
+}
+
+.timelineContent h3 {
+    font-family: 'Press Start 2P', cursive;
+    line-height: 20px;
+    font-size: 14px;
+    color: rgb(7, 0, 0);
 }
 
 .timelineContent time {
     color: #777;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
 }
 

@@ -14,7 +14,12 @@
     text-decoration: none;
     font-family: 'Press Start 2P', cursive;
     color: black;
-    /* display: flex; */
+    display: flex;
+    align-items: center;
     
-    
+}
+
+.buttonCvComponent svg {
+    font-size: 40px;
+    padding-right: 10px;
 }

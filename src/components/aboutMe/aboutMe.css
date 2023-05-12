@@ -11,6 +11,9 @@
     color: red;
 }
 
+.presentation p {
+    line-height: 20px;
+}
 
 .presentation span {
     display: block;

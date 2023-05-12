@@ -13,6 +13,7 @@ const Timeline = ({ data }) => {
                 <time>{data.date}</time>
                 <h3>{data.entreprise}</h3>
                 <p>{data.description}</p>
+                <p>{data.competence}</p>
 
                 <span className='circle'></span>
 

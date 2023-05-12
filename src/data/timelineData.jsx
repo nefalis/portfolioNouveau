@@ -1,9 +1,11 @@
+
 const timelineData = [
     {
         job: 'Formation Développeur Web',
         date: '09/2022 - 04/2023',
-        entreprise: 'Chez Open Classrooms',
+        entreprise: 'Open Classrooms',
         description: 'Réalisation de 6 projets. HTML/CSS - Sass - SEO - JavaScript - MongoDB - Nodejs - React',
+        competence: 'Autonomie - recherche d\'information ',
         category: {
             tag: 'Formation',
             color: '#58deff'
@@ -14,6 +16,7 @@ const timelineData = [
         date: '2020-2021',
         entreprise: 'Delpharm - Quetigny',
         description: 'Contrôle des médicaments',
+        competence: 'Autonomie - organisation - travail en équipe - rigueur ',
         category: {
             tag: 'Laboratoire',
             color: '#f998cf'
@@ -23,7 +26,8 @@ const timelineData = [
         job: 'Technicienne Contrôle Qualité',
         date: '2018-2020',
         entreprise: 'URGO - Chevigny Saint Sauveur',
-        description: 'Gestion des déviations - Gestion des contrôles des lots de validation- Contrôle des produits finis',
+        description: 'Gestion des déviations - Gestion des contrôles des lots de validation- Contrôle des produits finis Contact avec les fournisseurs français et étranger',
+        competence: 'Organisation - travail en équipe - gestion du stress - rigueur',
         category: {
             tag: 'Laboratoire',
             color: '#f998cf'
@@ -34,6 +38,7 @@ const timelineData = [
         date: '2013-2018',
         entreprise: 'Université de Bourgogne - Dijon',
         description: 'Mise en place et programmation d\'automate TECAN - Organisation, analyse et rendu de résultats sur des projets cliniques - Mise en place de protocol d\'analyse - Nombreuse analyse Biologique/Physico chimique',
+        competence: 'Organisation - travail en équipe - gestion de projet - rigueur - responsabilité',
         category: {
             tag: 'Laboratoire',
             color: '#f998cf'
@@ -44,6 +49,7 @@ const timelineData = [
         date: '2011-2013',
         entreprise: 'Laboratoire Départemental de Côte d\'Or - Dijon',
         description: 'Dosage biologique et microbiologique - Découpe de pièce anatomique',
+        competence: 'Organisation - travail en équipe - rigueur',
         category: {
             tag: 'Laboratoire',
             color: '#f998cf'

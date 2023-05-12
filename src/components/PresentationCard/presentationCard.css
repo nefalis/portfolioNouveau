@@ -1,6 +1,4 @@
 .containerPresentation {
-    width: 600px;
-    height: 600px;
     /* border-radius: 20px;
     border: 10px solid rgb(255, 254, 254);
     box-shadow: 2px 2px 2px 2px lightgray;
@@ -31,3 +29,6 @@
     font-size: 17px;
 }
 
+.containerPresentation svg {
+    font-size: 40px;
+}
