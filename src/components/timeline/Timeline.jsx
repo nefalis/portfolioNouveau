@@ -1,11 +1,14 @@
 import React from 'react';
 
+
 import './timeline.css'
 
 const Timeline = ({ data }) => {
     return (
         <div className='timelineComponent'>
+            
             <div className='timelineContent'>
+
                 <span className='tag' style={{ background: data.category.color }}>
                     {data.category.tag}
                 </span>

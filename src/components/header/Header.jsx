@@ -1,5 +1,5 @@
 import React from 'react';
-import Jellyfish from '../jellyfish/Jelly';
+import Landscape from '../../assets/landscape.png'
 
 import './header.css'
 
@@ -8,8 +8,10 @@ const Header = () => {
     return (
         <div className='headerContainer'>
 
-            <div className='jellyfishCompenent'>
-                <Jellyfish />
+            <div className='containerLandscape'>
+                <img className='landscape'
+                    src={Landscape} alt='paysage en pixel art'>
+                </img>
             </div>
 
         </div>

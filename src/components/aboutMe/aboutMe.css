@@ -1,20 +1,35 @@
-.presentation {
+.presentationAbout {
     border-radius: 20px;
     border: 10px solid rgb(255, 254, 254);
     box-shadow: 2px 2px 2px 2px lightgray;
     background-color: rgb(213, 247, 252);
     padding: 20px;
+    margin-top: 30px;
+    font-family: 'Press Start 2P', cursive;
+    position: relative;
 }
 
-.presentation h2 {
+
+.presentationAbout img {
+    position: absolute;
+    opacity: 0.3;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    left: 0;
+
+}
+
+.presentationAbout h2 {
     margin-top: 60px;
     color: red;
 }
 
-.presentation p {
+.presentationAbout p {
     line-height: 20px;
 }
 
-.presentation span {
+.presentationAbout span {
     display: block;
 }

@@ -14,7 +14,7 @@ const Home = () => {
             </div>
 
             <div className='buttonCvHome'>
-                <ButtonCv/>
+                <ButtonCv />
             </div>
 
 

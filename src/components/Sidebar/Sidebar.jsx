@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 import Jellyfish from '../jellyfish/Jelly';
 import Name from '../Name/NameMe';
+import ImgSidebar from '../../assets/sidebarImg.png'
 
 import { SiAiqfome } from "react-icons/si";
 import { SiChainguard } from "react-icons/si";
@@ -20,6 +21,9 @@ const audio = new Audio(pew);
 const Sidebar = () => {
     return (
         <div className='sidebarContainer'>
+
+            <img className='imgAbout' src={ImgSidebar} alt='pixel art paysage'></img>
+
             <nav>
                 <div className='jellyfishComponent'>
                     <Jellyfish />
