@@ -1,6 +1,6 @@
 import React from 'react';
 import "./presentationCard.css"
-import photoMe from "../../assets/photo_Emilie_Charron.png"
+import photoMe from "../../assets/photo_Emilie_Charron.jpg"
 import Mountain from '../../assets/montagne.png'
 import { IoLogoSass } from "react-icons/io";
 import { DiHtml5 } from "react-icons/di";
