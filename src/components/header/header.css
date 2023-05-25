@@ -2,10 +2,28 @@
     border: 10px solid rgb(255, 254, 254);
     box-shadow: 2px 2px 2px 2px lightgray;
     border-radius: 20px;
+    position: static;
+    height: 370px;
+}
+
+.MajHeader {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Press Start 2P', cursive;
+    top: 200px;
+}
+
+.headerContainer svg {
+    font-size: 50px;
 }
 
 .containerLandscape img {
     object-fit: cover;
     width: 100%;
     border-radius: 20px;
+    position: absolute;
+    height: 370px;
 }

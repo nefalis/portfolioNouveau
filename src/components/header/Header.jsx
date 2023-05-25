@@ -1,5 +1,6 @@
 import React from 'react';
 import Landscape from '../../assets/landscape.png'
+import { GiSeedling } from "react-icons/gi";
 
 import './header.css'
 
@@ -12,6 +13,11 @@ const Header = () => {
                 <img className='landscape'
                     src={Landscape} alt='paysage en pixel art'>
                 </img>
+            </div>
+
+            <div className='MajHeader'>
+                <h2> <GiSeedling /> Portfolio en cours de construction ! </h2>
+                <h3>MAJ 25/05/2023</h3>
             </div>
 
         </div>

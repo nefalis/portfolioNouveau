@@ -63,7 +63,7 @@
 }
 
 .projectContent img {
-    width: 100%;
+    width: 380px;
     /* object-fit: cover; */
     border-radius: 20px;
     border: 10px solid rgb(255, 254, 254);
@@ -71,11 +71,10 @@
 }
 
 .imgContentProjet {
-    height: 350px;
-    width: 480px;
+
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
     position: relative;
-    left: 50px;
+
 }
