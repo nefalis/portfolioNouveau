@@ -3,6 +3,7 @@ import React from 'react';
 import './project.css';
 import projectData from '../../data/projectData';
 import ProjectCard from '../../components/projectCard/ProjectCard';
+// import CardProject from '../../components/projectCard/CardProject';
 
 
 
@@ -25,6 +26,10 @@ const Project = () => {
             <div className='projectCard'>
                 <ProjectCardPage />
             </div>
+
+             {/* <div className='projectCard'>
+             <ProjectCardPage />
+            </div> */}
 
         </div>
     );

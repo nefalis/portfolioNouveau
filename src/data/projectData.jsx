@@ -35,7 +35,7 @@ const projectData = [
         name: 'Hot Takes',
         description: 'Mise en place d\'une API sécurisée avec NodeJS et Express. Création d\'une authentification sécurisée. Utilisation de MongoDB pour stocker les données. Gestion des likes/dislikes.',
         stack: 'HTML - CSS - MongoDB - Express - NodeJS',
-        pictures : ['https://i.goopics.net/rv7pfu.png', 'https://i.goopics.net/q8ixs0.png'],
+        pictures : ['https://i.goopics.net/9vpk55.png', 'https://i.goopics.net/j27c8c.png'],
         github: 'https://github.com/nefalis/Projet-6',
         // link: ''
     },

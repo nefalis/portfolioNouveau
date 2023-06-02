@@ -17,7 +17,7 @@ const Header = () => {
 
             <div className='MajHeader'>
                 <h2> <GiSeedling /> Portfolio en cours de construction ! </h2>
-                <h3>MAJ 25/05/2023</h3>
+                <h3>MAJ 02/06/2023</h3>
             </div>
 
         </div>
