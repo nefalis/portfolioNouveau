@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom'
 import Home from "./pages/Home/Home"
 import About from "./pages/About/About"
 import Project from "./pages/Project/Project"
+import DetailProject from './pages/DetailProject/DetailProject';
 import Error from "./pages/Error/Error"
 import Layout from "./pages/Layout"
 import Contact from "./pages/Contact/Contact"
@@ -18,7 +19,8 @@ const Router = () => {
                 <Route index element={<Home />} />
 
                 <Route path='/home' element={<Home />} />
-                <Route path='/project' element={<Project />} />
+                <Route path='/projects' element={<Project />} />
+                <Route path='/project' element={<DetailProject/>} />
                 <Route path='/about' element={<About />} />
                 <Route path='/contact' element={<Contact />} />
 

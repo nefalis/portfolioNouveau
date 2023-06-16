@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 import './projectCard.css';
 import ImgProjectCard from '../../assets/ocean.png';
@@ -6,30 +7,33 @@ import { GiJellyfish } from "react-icons/gi";
 import { GiCurledTentacle } from "react-icons/gi";
 
 
-const ProjectCard = ({ data }) => {
+
+
+const ProjectCard = ({ idProject, imgProject, nameProject, descriptionPorject, stackProject, githubProject, demoProject }) => {
     return (
         <div className='projectCardComponent'>
+            <Link className='card' to={"../Project/" + idProject} >
 
-            <img className='imgProjectCard' src={ImgProjectCard} alt='pixel art paysage'></img>
+                <img className='imgProjectCard' src={ImgProjectCard} alt='pixel art paysage'></img>
 
-            <div className='projectContent'>
+                <div className='projectContent'>
 
-                <h2>{data.name}</h2>
+                    <h2>{nameProject}</h2>
 
-                <div className='imgContentProjet'>
-                    <img src={data.pictures[0]} alt="photo du site" />
+                    <div className='imgContentProjet'>
+                        <img src={imgProject} alt="photo du site" />
+                    </div>
+
+                    <p>{descriptionPorject}</p>
+                    <h3>{stackProject}</h3>
+
+                    <div className='buttonComponent'>
+                        <a className='buttonLink' href={githubProject} download> <GiCurledTentacle /> Lien Github</a>
+                        <a className='buttonLink' href={demoProject} download> <GiJellyfish /> Lien demo</a>
+                    </div>
+
                 </div>
-
-                <p>{data.description}</p>
-                <h3>{data.stack}</h3>
-
-                <div className='buttonComponent'>
-                    <a className='buttonLink' href={data.github} download> <GiCurledTentacle /> Lien Github</a>
-                    <a className='buttonLink' href={data.link} download> <GiJellyfish /> Lien demo</a>
-                </div>
-
-            </div>
-
+            </Link>
 
         </div>
     );

@@ -55,7 +55,7 @@ const Sidebar = () => {
 
 
                         <li className="sidebarProject" onClick={() => audio.play()}>
-                            <NavLink to='/project'
+                            <NavLink to='/projects'
                                 className={({ isActive }) => (isActive ? "link-active" : "sidebar")}>
                                 <span> <GiRoundBottomFlask /> Projets </span>
                             </NavLink>

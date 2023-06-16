@@ -1,0 +1,13 @@
+.container404 {
+    margin: 0 auto;
+    max-width: 1440px;
+    border-radius: 20px;
+    border: 10px solid rgb(255, 254, 254);
+    box-shadow: 2px 2px 2px 2px lightgray;
+    margin-top: 30px;
+}
+
+.imagePage404 {
+    width: 100%;
+    border-radius: 20px;
+}

@@ -1,15 +1,27 @@
 .ProjectContainer {
     margin: 0 20px;
+    max-width: 1440px;
+    border-radius: 20px;
+    border: 10px solid rgb(255, 254, 254);
+    box-shadow: 2px 2px 2px 2px lightgray;
+    margin-top: 30px;
 }
 
 .projectCardContainer {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
-    border-radius: 20px;
-    border: 10px solid rgb(255, 254, 254);
-    box-shadow: 2px 2px 2px 2px lightgray;
-    margin-top: 30px;
+    
     justify-content: center;
+    position: relative;
+
+}
+.imgProjectCard {
+    position: absolute;
+    opacity: 0.5;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
 
 }
