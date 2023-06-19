@@ -13,6 +13,10 @@
     font-family: 'Press Start 2P', cursive;
     line-height: 1.5;
     width: 420px;
+    border-radius: 20px;
+    border: 10px solid rgb(255, 254, 254);
+    box-shadow: 2px 2px 2px 2px lightgray;
+    margin-top: 30px;
 }
 
 .imgProjectCard {
@@ -32,6 +36,7 @@
     position: relative;
     justify-content: center;
     margin: 20px;
+    
 }
 
 .projectContent h2 {
