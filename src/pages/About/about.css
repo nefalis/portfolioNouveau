@@ -1,3 +1,9 @@
+.aboutContainer {
+    margin-right: 30px;
+}
+
+
+
 .timelineContainer {
     display: flex;
     flex-direction: column;

@@ -9,19 +9,16 @@ const Header = () => {
     return (
         <div className='headerContainer'>
 
-            <div className='containerLandscape'>
-                <img className='landscape'
-                    src={Landscape} alt='paysage en pixel art'>
-                </img>
-            </div>
+            <img className='landscape'
+                src={Landscape} alt='paysage en pixel art'>
+            </img>
 
             <div className='MajHeader'>
                 <h2> <GiSeedling /> Portfolio en cours de construction ! </h2>
-                <h3>MAJ 19/06/2023</h3>
+                <h3>MAJ 05/07/2023</h3>
             </div>
 
         </div>
-
 
     );
 };

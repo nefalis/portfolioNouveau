@@ -1,86 +1,72 @@
-.projectCardComponent {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 20px;
-    /* border: 10px solid rgb(255, 254, 254);
-    box-shadow: 2px 2px 2px 2px lightgray; */
+.ProjectCardItem {
+    text-align: center;
     padding: 20px;
-    position: relative;
-    margin-top: 30px;
-    max-width: 1440px;
-    font-family: 'Press Start 2P', cursive;
-    line-height: 1.5;
-    width: 420px;
-    border-radius: 20px;
-    border: 10px solid rgb(255, 254, 254);
-    box-shadow: 2px 2px 2px 2px lightgray;
-    margin-top: 30px;
 }
 
-.imgProjectCard {
+.projectCardComponent {
+    margin: 30px;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    padding: 10px;
+    margin: 10px;
+    max-width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    border-radius: 20px;
+    border: 10px solid rgb(255, 254, 254);
+    box-shadow: 2px 2px 2px 2px lightgray; 
+    background-color: rgb(213, 249, 255);
+   
+}
+
+/* .imgProjectCard {
     position: absolute;
     opacity: 0.5;
-    object-fit: cover;
-    height: 100%;
+    border-radius: 20px;
+  } */
+
+.project-card img {
     width: 100%;
-    border-radius: 20px;
-    top: 0;
+    border-radius: 5px;
+    box-shadow: 2px 3px 4px 3px lightgray;
 }
 
-.projectContent {
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    justify-content: center;
-    margin: 20px;
-    
-}
-
-.projectContent h2 {
+.project-card h3 {
     color: red;
-    font-size: 30px;
+    font-family: 'Press Start 2P', cursive;
 }
 
-.projectContent h3 {
-    color: red;
+.project-card p {
+    color: black;
     font-size: 16px;
+    /* display: flex;
+    justify-content: center; */
+    /* font-family: 'Press Start 2P', cursive; */
 }
 
-.projectContent .buttonLink {
-    border-radius: 20px;
-    border: 10px solid rgb(255, 254, 254);
-    box-shadow: 2px 2px 2px 2px lightgray;
-    padding: 5px;
+.project-card .link {
+    display: flex;
+    margin-top: 10px;
     text-decoration: none;
     color: black;
-    display: flex;
+    border: 4px solid white;
+    box-shadow: 2px 2px 2px 2px lightgray;
+    border-radius: 20px;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
-    margin-top: 20px;
+    height: 20px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 12px;
 }
 
-.buttonLink svg {
-    font-size: 40px;
-    padding-right: 10px; 
-}
-
-.projectContent img {
-    width: 380px;
-    /* object-fit: cover; */
-    border-radius: 20px;
-    border: 10px solid rgb(255, 254, 254);
-    box-shadow: 2px 2px 2px 2px lightgray;
-}
-
-.imgContentProjet {
-
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
-    position: relative;
-
+.project-card .link svg {
+    font-size: 20px;
+    font-weight: 300;
 }

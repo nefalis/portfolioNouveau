@@ -1,19 +1,27 @@
-
 body {
   margin: 0;
   padding: 0;
-
+  display: flex;
+  flex-direction: column;
 }
 
-.Layout {
-  display: grid;
+.content {
+  display: flex;
+  flex: 1;
 }
 
-.header, .footer {
+.sidebar {
+  width: 400px;
+}
+
+.layout {
+  flex: 1;
+}
+
+/* .header, .footer {
   grid-column: 1 / -1;
 }
 
 .headerContainer {
   grid-column: 1/3;
-}
-
+} */

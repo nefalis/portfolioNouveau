@@ -1,38 +1,112 @@
 import React from 'react';
-
 import './projectCard.css';
-import ImgProjectCard from '../../assets/ocean.png';
+import ImgOcean from '../../assets/oceanBis.png'
+
+import Booki from '../../assets/booki1.png'
+import Hottake from '../../assets/hottake2.png'
+import Kanap from '../../assets/kanap1.png'
+import Kasa from '../../assets/kasa1.png'
+import Ohmyfood from '../../assets/ohmyfood1.png'
+import Panthere from '../../assets/panthere1.png'
+import Webee from '../../assets/webee.png'
+import Portfolio from '../../assets/portfolio.png'
+
 import { GiJellyfish } from "react-icons/gi";
 import { GiCurledTentacle } from "react-icons/gi";
 
-
-const ProjectCard = ({ data }) => {
+const ProjectCard = ({ title, description, stack, github, link, picture }) => {
     return (
-        <div className='projectCardComponent'>
+        <div className="project-card">
 
-            <img className='imgProjectCard' src={ImgProjectCard} alt='pixel art paysage'></img>
+            <h3>{title}</h3>
+            <img src={picture} alt="Project" />
+            <p>{description}</p>
+            <p>{stack}</p>
+            {link && (
+                <a href={github} download target="_blank" className="link"><GiJellyfish /> Lien Github</a>
+            )}
 
-            <div className='projectContent'>
-
-                <h2>{data.name}</h2>
-
-                <div className='imgContentProjet'>
-                    <img src={data.pictures[0]} alt="photo du site" />
-                </div>
-
-                <p>{data.description}</p>
-                <h3>{data.stack}</h3>
-
-                <div className='buttonComponent'>
-                    <a className='buttonLink' href={data.github} download> <GiCurledTentacle /> Lien Github</a>
-                    <a className='buttonLink' href={data.link} download> <GiJellyfish /> Lien demo</a>
-                </div>
-
-            </div>
-
-
+            {link && (
+                <a href={link} download target="_blank" className="link"><GiCurledTentacle /> Lien démo</a>
+            )}
         </div>
     );
 };
 
-export default ProjectCard;
+const ProjectCardItem = () => {
+
+    return (
+        <div className='projectCardComponent'>
+
+            {/* <img className='imgProjectCard' src={ImgOcean} alt='pixel art paysage'></img> */}
+
+            <div className="Card">
+                <ProjectCard
+                    title="Booki"
+                    picture={Booki}
+                    description="Réalisation d'un prototype conformément à la maquette en HTML et CSS."
+                    stack="HTML - CSS - Responsive - Validation W3C"
+                    github="https://github.com/nefalis/Booki-P2"
+                    link="https://nefalis.github.io/Booki-P2/"
+
+                />
+                <ProjectCard
+                    title="La Panthère"
+                    picture={Panthere}
+                    description="Optimisation d'un site existant. Amélioration de performance et accessibilité. Création d\'un rapport SEO pour montrer les optimisations apportés au site."
+                    stack="HTML - CSS - Lighthouse - SEO"
+                    github="https://github.com/nefalis/La-Panthere"
+                    link="https://nefalis.github.io/La-Panthere/"
+                />
+                <ProjectCard
+                    title="OhMyFood"
+                    picture={Ohmyfood}
+                    description="Conception d'une page web en mobile first et en intégrant des animations."
+                    stack="HTML - CSS - Sass - Responsive"
+                    github="https://github.com/nefalis/ohmyfood"
+                    link="https://nefalis.github.io/ohmyfood/"
+                />
+                <ProjectCard
+                    title="Kanap"
+                    picture={Kanap}
+                    description="Construction du frontend d'un site de e-commece avec des données issue d'une API. L'utilisateur peut ajouter/ modifier ou supprimer des articles dans son panier avant de passer commande."
+                    stack="HTML - CSS - JavaScript"
+                    github="https://github.com/nefalis/Kanap"
+                />
+                <ProjectCard
+                    title="Hot Takes"
+                    picture={Hottake}
+                    description="Mise en place d'une API sécurisée avec NodeJS et Express. Création d'une authentification sécurisée. Utilisation de MongoDB pour stocker les données. Gestion des likes/dislikes."
+                    stack="HTML - CSS - MongoDB - Express - NodeJS"
+                    github="https://github.com/nefalis/Projet-6"
+                />
+
+                <ProjectCard
+                    title="Kasa"
+                    picture={Kasa}
+                    description="Création d'une application avec React en suivant une maquette Figma "
+                    stack="HTML - CSS - React"
+                    github="https://github.com/nefalis/projet-7"
+                    link="https://projet-7-five.vercel.app/"
+                />
+                <ProjectCard
+                    title="Mon portfolio"
+                    picture={Portfolio}
+                    description="Création de mon portfolio "
+                    stack="HTML - CSS - React"
+                    link=""
+                />
+                <ProjectCard
+                    title="Projet en cours"
+                    picture={Webee}
+                    description="Projet collectif en cours de developement. Aide à l'organisation du projet, MLD, création de composant "
+                    stack="HTML - CSS - React - Tailwind - Jira - Notion - Penpot"
+                    link=""
+                />
+            </div>
+        </div>
+
+    );
+};
+
+export default ProjectCardItem;

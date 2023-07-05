@@ -64,7 +64,7 @@ const Sidebar = () => {
                         <li className="sidebarContact" onClick={() => audio.play()}>
                             <NavLink to='/contact'
                                 className={({ isActive }) => (isActive ? "link-active" : "sidebar")}>
-                                <span><GiBallHeart />  Contact </span>
+                                <span><GiBallHeart />  Jeux </span>
                             </NavLink>
                         </li>
 

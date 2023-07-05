@@ -1,15 +1,17 @@
-/* .home {
+.home {
     max-width: 1240px;
-    margin: 10px auto;
-    border-radius: 20px;
-    
-   
-
-} */
+    margin: 0px auto;
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+}
 
 .presentation {
-    margin: 40px;
+    margin: 30px;
     font-family: 'Press Start 2P', cursive;
-    /* display: flex;
-    justify-content: center; */
+}
+
+.buttonCvHome {
+    display: flex;
+    
 }
