@@ -30,6 +30,11 @@
     position: relative;
 }
 
+.buttonCvComponent a:hover {
+    color: red;
+    cursor: pointer;
+}
+
 .buttonCvComponent svg {
     font-size: 40px;
     padding-right: 10px;

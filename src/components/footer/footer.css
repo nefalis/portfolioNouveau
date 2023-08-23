@@ -29,6 +29,12 @@
     position: relative;
     margin-right: 50px;
     text-decoration: none;
+    
+}
+
+.footerContainer a:hover {
+    color: red;
+    cursor: pointer;
 }
 
 .footerContainer p {

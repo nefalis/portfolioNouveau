@@ -2,6 +2,8 @@ import React from 'react';
 import './projectCard.css';
 import ImgOcean from '../../assets/oceanBis.png'
 
+import Quiz from '../quiz/Quiz'
+
 import Booki from '../../assets/booki1.png'
 import Hottake from '../../assets/hottake2.png'
 import Kanap from '../../assets/kanap1.png'
@@ -18,17 +20,23 @@ const ProjectCard = ({ title, description, stack, github, link, picture }) => {
     return (
         <div className="project-card">
 
-            <h3>{title}</h3>
-            <img src={picture} alt="Project" />
-            <p>{description}</p>
-            <p>{stack}</p>
-            {link && (
+            <div className='project_link'>
+                <h3>{title}</h3>
                 <a href={github} download target="_blank" className="link"><GiJellyfish /> Lien Github</a>
-            )}
+                {link && (
+                    <a href={link} download target="_blank" className="link"><GiCurledTentacle /> Lien démo</a>
+                )}
+            </div>
 
-            {link && (
-                <a href={link} download target="_blank" className="link"><GiCurledTentacle /> Lien démo</a>
-            )}
+            <div className='project_description'>
+                <img src={picture} alt="Project" />
+
+                <p>{description}</p>
+                <p className='stack'>{stack}</p>
+            </div>
+
+
+
         </div>
     );
 };
@@ -40,7 +48,12 @@ const ProjectCardItem = () => {
 
             {/* <img className='imgProjectCard' src={ImgOcean} alt='pixel art paysage'></img> */}
 
-            <div className="Card">
+            
+
+                <h2>Projets professionalisants</h2>
+
+            <div className="Card">    
+
                 <ProjectCard
                     title="Booki"
                     picture={Booki}
@@ -48,16 +61,17 @@ const ProjectCardItem = () => {
                     stack="HTML - CSS - Responsive - Validation W3C"
                     github="https://github.com/nefalis/Booki-P2"
                     link="https://nefalis.github.io/Booki-P2/"
-
                 />
+
                 <ProjectCard
                     title="La Panthère"
                     picture={Panthere}
-                    description="Optimisation d'un site existant. Amélioration de performance et accessibilité. Création d\'un rapport SEO pour montrer les optimisations apportés au site."
+                    description="Optimisation d'un site existant. Amélioration de performance et accessibilité. Création d'un rapport SEO pour montrer les optimisations apportés au site."
                     stack="HTML - CSS - Lighthouse - SEO"
                     github="https://github.com/nefalis/La-Panthere"
                     link="https://nefalis.github.io/La-Panthere/"
                 />
+
                 <ProjectCard
                     title="OhMyFood"
                     picture={Ohmyfood}
@@ -66,6 +80,7 @@ const ProjectCardItem = () => {
                     github="https://github.com/nefalis/ohmyfood"
                     link="https://nefalis.github.io/ohmyfood/"
                 />
+
                 <ProjectCard
                     title="Kanap"
                     picture={Kanap}
@@ -73,6 +88,7 @@ const ProjectCardItem = () => {
                     stack="HTML - CSS - JavaScript"
                     github="https://github.com/nefalis/Kanap"
                 />
+
                 <ProjectCard
                     title="Hot Takes"
                     picture={Hottake}
@@ -89,6 +105,7 @@ const ProjectCardItem = () => {
                     github="https://github.com/nefalis/projet-7"
                     link="https://projet-7-five.vercel.app/"
                 />
+
                 <ProjectCard
                     title="Mon portfolio"
                     picture={Portfolio}
@@ -96,14 +113,25 @@ const ProjectCardItem = () => {
                     stack="HTML - CSS - React"
                     link=""
                 />
-                <ProjectCard
+
+                {/* <ProjectCard
                     title="Projet en cours"
                     picture={Webee}
                     description="Projet collectif en cours de developement. Aide à l'organisation du projet, MLD, création de composant "
                     stack="HTML - CSS - React - Tailwind - Jira - Notion - Penpot"
                     link=""
-                />
-            </div>
+                /> */}
+
+                </div>
+
+                <h2>Jeux</h2>
+
+                {/* <Quiz /> */}
+                <div className="Card"> 
+                
+                </div>
+
+            
         </div>
 
     );

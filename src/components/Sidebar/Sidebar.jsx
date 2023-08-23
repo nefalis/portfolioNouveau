@@ -8,7 +8,9 @@ import ImgSidebar from '../../assets/sidebarImg.png'
 import { SiAiqfome } from "react-icons/si";
 import { SiChainguard } from "react-icons/si";
 import { GiRoundBottomFlask } from "react-icons/gi";
-import { GiBallHeart } from "react-icons/gi";
+import { IoMdMail } from "react-icons/io";
+import { IoLogoLinkedin } from "react-icons/io";
+import { IoLogoGithub } from "react-icons/io";
 
 import pew from '../../assets/pew.mp3'
 
@@ -32,8 +34,6 @@ const Sidebar = () => {
                 <div className='nameComponent'>
                     <Name />
                 </div>
-
-
 
                 <div className='sidebar'>
                     <ul>
@@ -61,15 +61,14 @@ const Sidebar = () => {
                             </NavLink>
                         </li>
 
-                        <li className="sidebarContact" onClick={() => audio.play()}>
-                            <NavLink to='/contact'
-                                className={({ isActive }) => (isActive ? "link-active" : "sidebar")}>
-                                <span><GiBallHeart />  Jeux </span>
-                            </NavLink>
-                        </li>
-
-
                     </ul>
+
+                    <div className='sidebarContact' >
+                        <a href="mailto:charron.emily@gmail.com"> <IoMdMail /> </a>
+                        <a href='https://www.linkedin.com/in/emiliec-devweb/' target='_blank' rel="noopener noreferrer"> <IoLogoLinkedin /> </a>
+                        <a href='https://github.com/nefalis' target='_blank' rel="noopener noreferrer"> <IoLogoGithub /> </a>
+                    </div>
+
                 </div>
 
             </nav>

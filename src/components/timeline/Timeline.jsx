@@ -15,10 +15,12 @@ const Timeline = ({ data }) => {
                 <h2>{data.job}</h2>
                 <time>{data.date}</time>
                 <h3>{data.entreprise}</h3>
-                <p>{data.description}</p>
-                <p>{data.competence}</p>
 
-                <span className='circle'></span>
+                <div className='timelineDescription'>
+                <p>{data.description}</p>
+                </div>
+                
+                <p>{data.competence}</p>
 
             </div>
 

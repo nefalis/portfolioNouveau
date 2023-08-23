@@ -1,55 +1,58 @@
-.ProjectCardItem {
-    text-align: center;
-    padding: 20px;
-}
-
-.projectCardComponent {
-    margin: 30px;
-}
-
-.card {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
 .project-card {
-    padding: 10px;
-    margin: 10px;
-    max-width: 300px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: relative;
     border-radius: 20px;
     border: 10px solid rgb(255, 254, 254);
-    box-shadow: 2px 2px 2px 2px lightgray; 
-    background-color: rgb(213, 249, 255);
-   
+    box-shadow: 2px 2px 2px 2px lightgray;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(193, 241, 255);
+    width: 475px;
 }
 
-/* .imgProjectCard {
-    position: absolute;
-    opacity: 0.5;
-    border-radius: 20px;
-  } */
-
 .project-card img {
-    width: 100%;
-    border-radius: 5px;
-    box-shadow: 2px 3px 4px 3px lightgray;
+    border-radius: 20px;
+    border: 10px solid rgb(255, 254, 254);
+    box-shadow: 2px 2px 2px 2px lightgray;
+    width: 225px;
+    height: 200px;
+    margin: 10px;
+}
+
+.project_description {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.project_description p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project_description .stack {
+    color: red;
+    /* font-family: 'Press Start 2P', cursive; */
+    display: flex;
+    font-weight: bold;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
 }
 
 .project-card h3 {
     color: red;
     font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+    font-weight: bold;
+
 }
 
-.project-card p {
-    color: black;
-    font-size: 16px;
-    /* display: flex;
-    justify-content: center; */
-    /* font-family: 'Press Start 2P', cursive; */
-}
 
 .project-card .link {
     display: flex;
@@ -61,12 +64,30 @@
     border-radius: 20px;
     justify-content: center;
     align-items: center;
-    height: 20px;
+    height: 40px;
+    width: 200px;
+    gap: 15px;
     font-family: 'Press Start 2P', cursive;
     font-size: 12px;
+    
+}
+
+.project-card .link:hover {
+    outline: 2px solid red;
+    cursor: pointer;
 }
 
 .project-card .link svg {
     font-size: 20px;
     font-weight: 300;
+    margin-left: 10px;
+}
+
+.projectCardComponent h2{
+    font-family: 'Press Start 2P', cursive;
+}
+
+.Card {
+    display: flex;
+    flex-wrap: wrap;
 }
