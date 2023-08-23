@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom';
 import Jellyfish from '../jellyfish/Jelly';
 import Name from '../Name/NameMe';
 import ImgSidebar from '../../assets/sidebarImg.png'
+import Toggle from '../../components/toggleBtn/ToggleBtn'
 
 import { SiAiqfome } from "react-icons/si";
 import { SiChainguard } from "react-icons/si";
@@ -25,6 +26,13 @@ const Sidebar = () => {
         <div className='sidebarContainer'>
 
             <img className='imgAbout' src={ImgSidebar} alt='pixel art paysage'></img>
+
+            <div className='SidebarToggle'>
+                <Toggle/>
+            </div>
+
+
+
 
             <nav>
                 <div className='jellyfishComponent'>

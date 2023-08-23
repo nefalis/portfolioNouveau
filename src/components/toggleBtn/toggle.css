@@ -1,0 +1,26 @@
+.toggleComponent {
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.on-off-button {
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    
+}
+
+.on-off-button.on {
+    background-color: #4caf50;
+    color: white;
+}
+
+.on-off-button.off {
+    background-color: #e74c3c;
+    color: white;
+}
