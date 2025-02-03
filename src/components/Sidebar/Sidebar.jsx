@@ -71,12 +71,6 @@ const Sidebar = () => {
 
                     </ul>
 
-                    <div className='sidebarContact' >
-                        <a href="mailto:charron.emily@gmail.com"> <IoMdMail /> </a>
-                        <a href='https://www.linkedin.com/in/emiliec-devweb/' target='_blank' rel="noopener noreferrer"> <IoLogoLinkedin /> </a>
-                        <a href='https://github.com/nefalis' target='_blank' rel="noopener noreferrer"> <IoLogoGithub /> </a>
-                    </div>
-
                 </div>
 
             </nav>
