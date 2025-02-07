@@ -8,19 +8,19 @@
 
 .on-off-button {
     padding: 8px 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
     cursor: pointer;
     font-weight: bold;
+    border: 1px solid black;
+    border-radius: 50px;
     
 }
 
 .on-off-button.on {
-    background-color: #4caf50;
-    color: white;
+    color: blueviolet;
+    font-weight: bold;
 }
 
 .on-off-button.off {
-    background-color: #e74c3c;
-    color: white;
+    color: rgb(250, 18, 192);
+    font-weight: bold;
 }

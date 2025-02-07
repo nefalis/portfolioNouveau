@@ -1,82 +1,54 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-
 import Jellyfish from '../jellyfish/Jelly';
 import Name from '../Name/NameMe';
-import ImgSidebar from '../../assets/sidebarImg.png'
-import Toggle from '../../components/toggleBtn/ToggleBtn'
-
-import { SiAiqfome } from "react-icons/si";
-import { SiChainguard } from "react-icons/si";
+import ImgSidebar from '../../assets/sidebarImg.png';
+import Toggle from '../../components/toggleBtn/ToggleBtn';
+import { SiAiqfome, SiChainguard } from "react-icons/si";
 import { GiRoundBottomFlask } from "react-icons/gi";
-import { IoMdMail } from "react-icons/io";
-import { IoLogoLinkedin } from "react-icons/io";
-import { IoLogoGithub } from "react-icons/io";
-
-import pew from '../../assets/pew.mp3'
-
-
-
+import pew from '../../assets/pew.mp3';
 import './sidebar.css';
 
 const audio = new Audio(pew);
 
 const Sidebar = () => {
     return (
-        <div className='sidebarContainer'>
+        <div className="min-h-screen border-10 border-white shadow-lg rounded-lg m-6 relative w-80">
 
-            <img className='imgAbout' src={ImgSidebar} alt='pixel art paysage'></img>
+            <img className="absolute w-full h-full object-cover opacity-40 rounded-lg" src={ImgSidebar} alt="pixel art paysage" />
 
-            <div className='SidebarToggle'>
-                <Toggle/>
+            <div className="relative flex justify-center p-4">
+                <Toggle />
             </div>
 
+            <nav className="relative flex flex-col items-center space-y-10 pt-12">
+                <Jellyfish />
+                <Name />
 
+                <ul className="sidebar flex flex-col space-y-6 w-full">
 
+                    <li className="sidebarItem bg-[#f998cf] rounded-lg w-2/3 ml-15">
+                        <NavLink to='/home' className="sidebarLink flex items-center gap-2" onClick={() => audio.play()}>
+                            <SiAiqfome className="icon" /> Accueil
+                        </NavLink>
+                    </li>
 
-            <nav>
-                <div className='jellyfishComponent'>
-                    <Jellyfish />
-                </div>
+                    <li className="sidebarItem bg-[#f5f994] rounded-lg w-2/3 ml-20">
+                        <NavLink to='/about' className="sidebarLink flex items-center gap-2" onClick={() => audio.play()}>
+                            <SiChainguard className="icon" /> Présentation
+                        </NavLink>
+                    </li>
 
-                <div className='nameComponent'>
-                    <Name />
-                </div>
+                    <li className="sidebarItem bg-[#7ef8c7] rounded-lg w-2/3 ml-15">
+                        <NavLink to='/project' className="sidebarLink flex items-center gap-2" onClick={() => audio.play()}>
+                            <GiRoundBottomFlask className="icon" /> Projets
+                        </NavLink>
+                    </li>
 
-                <div className='sidebar'>
-                    <ul>
-
-                        <li className="sidebarHome" onClick={() => audio.play()} >
-                            <NavLink to='/home'
-                                className={({ isActive }) => (isActive ? "link-active" : "sidebar")} >
-                                <span><SiAiqfome /> Accueil</span>
-                            </NavLink>
-                        </li>
-
-
-                        <li className="sidebarAbout" onClick={() => audio.play()}>
-                            <NavLink to='/about'
-                                className={({ isActive }) => (isActive ? "link-active" : "sidebar")}>
-                                <span><SiChainguard /> Présentation</span>
-                            </NavLink>
-                        </li>
-
-
-                        <li className="sidebarProject" onClick={() => audio.play()}>
-                            <NavLink to='/project'
-                                className={({ isActive }) => (isActive ? "link-active" : "sidebar")}>
-                                <span> <GiRoundBottomFlask /> Projets </span>
-                            </NavLink>
-                        </li>
-
-                    </ul>
-
-                </div>
-
+                </ul>
             </nav>
+
         </div>
-
-
     );
 };
 

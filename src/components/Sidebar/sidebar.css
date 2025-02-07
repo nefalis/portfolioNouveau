@@ -1,74 +1,21 @@
-.sidebarContainer {
-    /* width: 350px; */
-    min-height: 100vh;
-    /* border-radius: 20px; */
-    margin: 30px;
-    border-radius: 20px;
-    border: 10px solid rgb(255, 254, 254);
-    box-shadow: 2px 2px 2px 2px lightgray;
-    height: 350px;
-    position: relative;
-}
-
-.sidebarContainer img {
-    position: absolute;
-    opacity: 0.4;
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-    border-radius: 20px;
-}
-
-.sidebarContainer a {
-    gap: 10px;
-}
-
-/* nom */
-.nameComponent {
-    margin-bottom: 60px;
-    position: relative;
-}
 
 /* barre navigation */
 .sidebar {
-    font-size: 18px;
-    color: black;
-    margin-left: 10px;
-    margin-right: 10px;
     flex-direction: column;
     font-family: 'Press Start 2P', cursive;
     object-fit: cover;
 }
 
-.sidebar span {
-    align-items: center;
-    display: flex;
-    gap: 20px;
-}
-
 .sidebar svg {
-    font-size: 40px;
+    font-size: 30px;
     align-items: center;
 }
-
 
 .sidebar ul {
     display: flex;
     flex-direction: column;
-
     gap: 40px;
     padding: 0px;
-}
-
-.sidebar a {
-    text-decoration: none;
-    color: black;
-}
-
-.jellyfishComponent {
-    display: flex;
-    justify-content: center;
-    padding: 50px;
 }
 
 .sidebar li {
@@ -78,46 +25,6 @@
     text-decoration: none;
     display: flex;
     color: black;
-}
-
-.sidebarHome {
-    background-color: #f998cf;
-    margin-right: 30px;
-    border: 2px solid rgb(255, 254, 254);
-    box-shadow: 2px 2px 2px 2px lightgray;
-    border-radius: 20px;
-    opacity: 0.8;
-}
-
-.sidebarAbout {
-    background-color: #f5f994;
-    margin-left: 30px;
-    border: 2px solid rgb(255, 254, 254);
-    box-shadow: 2px 2px 2px 2px lightgray;
-    border-radius: 20px;
-    opacity: 0.8;
-}
-
-.sidebarProject {
-    background-color: #7ef8c7;
-    margin-right: 30px;
-    border: 2px solid rgb(255, 254, 254);
-    box-shadow: 2px 2px 2px 2px lightgray;
-    border-radius: 20px;
-    opacity: 0.8;
-}
-
-.sidebarContact a {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: end;
-    position: relative;
-    
-}
-
-.sidebarContact {
-    margin-top: 50px;
 }
 
 /* page active*/
