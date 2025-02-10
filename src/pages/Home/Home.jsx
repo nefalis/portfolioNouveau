@@ -1,7 +1,7 @@
 import React from 'react';
 import "./home.css"
-import PresentationCard from '../../components/PresentationCard/PresentationCard';
-import ButtonCv from '../../components/buttonCV/ButtonCv';
+import PresentationCard from '../../components/PresentationCard';
+import ButtonCv from '../../components/ButtonCv';
 
 
 const Home = () => {
@@ -16,7 +16,6 @@ const Home = () => {
             <div className='buttonCvHome'>
                 <ButtonCv />
             </div>
-
 
         </main>
 

@@ -7,7 +7,6 @@
 .timelineContainer {
     display: flex;
     flex-direction: column;
-    /* margin: 40px; */
     border-radius: 20px;
     border: 10px solid rgb(255, 254, 254);
     box-shadow: 2px 2px 2px 2px lightgray;
@@ -31,13 +30,4 @@
     top: 0;
     left: 0;
 
-}
-
-.timelineContainer::after {
-    background-color: #fe0e06;
-    content: '';
-    position: absolute;
-    left: calc(50% - 2px);
-    width: 4px;
-    height: 99%;
 }

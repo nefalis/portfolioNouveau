@@ -4,13 +4,13 @@ import './name.css';
 
 const NameMe = () => {
     return (
-        <div className='name'>
+        <div className='name font-bold'>
 
-            <div className='firstName'>
+            <div className='firstName flex flex-row'>
                 <span>Emilie</span>
             </div>
 
-            <div className='lastName'>
+            <div className='lastName flex flex-row'>
                 <span>Charron</span>
             </div>
 

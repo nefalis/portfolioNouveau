@@ -1,65 +1,7 @@
 .name {
-    font-size: 20px;
     font-family: 'Press Start 2P', cursive;
-    font-weight: 800;
     display: flex;
     justify-content: center;
     gap: 10px;
     color: black;
 }
-
-.firstName {
-    flex-direction: row;
-    display: flex;
-}
-
-.lastName {
-    flex-direction: row;
-    display: flex;
-}
-
-
-
-/* .nameE {
-    color: aqua;
-}
-
-.nameM {
-    color: rgb(238, 0, 255);
-}
-
-.nameI {
-    color: rgb(128, 255, 0);
-}
-
-.nameL {
-    color: rgb(255, 0, 51);
-}
-
-.nameC {
-    color: rgb(255, 221, 0);
-}
-
-.nameH {
-    color: rgb(0, 13, 255);
-}
-
-.nameA {
-    color: rgb(132, 0, 255);
-}
-
-.nameR1 {
-    color: rgb(64, 252, 7);
-}
-
-.nameR2 {
-    color: rgb(225, 0, 255);
-}
-
-.nameO {
-    color: rgb(255, 0, 34);
-}
-
-.nameN {
-    color: rgb(255, 213, 0);
-} */

@@ -1,6 +1,6 @@
 import React from 'react';
-import photoMe from "../../assets/photo_Emilie_Charron.jpg";
-import Mountain from '../../assets/montagne.png';
+import photoMe from "../assets/photo_Emilie_Charron.jpg";
+import Mountain from '../assets/montagne.png';
 import { DiReact, DiDjango, DiJsBadge, DiGithubBadge, DiHtml5 } from "react-icons/di";
 import { SiCsswizardry } from "react-icons/si";
 import { FaPython } from "react-icons/fa";

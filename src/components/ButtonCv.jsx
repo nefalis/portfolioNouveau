@@ -1,7 +1,7 @@
 import React from 'react';
-import CVEmilie from '../../assets/DevWeb_Charron_Emilie.pdf';
+import CVEmilie from '../assets/Charron_Emilie_CV.pdf';
 import { GiBubbleField } from "react-icons/gi";
-import ImgButton from "../../assets/space.png";
+import ImgButton from "../assets/space.png";
 
 const ButtonCv = () => {
     return (

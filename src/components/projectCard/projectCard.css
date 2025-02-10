@@ -1,93 +1,68 @@
-.project-card {
-    border-radius: 20px;
-    border: 10px solid rgb(255, 254, 254);
-    box-shadow: 2px 2px 2px 2px lightgray;
-    margin: 20px;
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
     padding: 20px;
-    display: flex;
     justify-content: center;
-    background-color: rgb(193, 241, 255);
-    width: 475px;
 }
 
-.project-card img {
-    border-radius: 20px;
-    border: 10px solid rgb(255, 254, 254);
-    box-shadow: 2px 2px 2px 2px lightgray;
-    width: 225px;
-    height: 200px;
-    margin: 10px;
-}
-
-.project_description {
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    font-size: 20px;
-}
-
-.project_description p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.project_description .stack {
-    color: red;
-    /* font-family: 'Press Start 2P', cursive; */
-    display: flex;
-    font-weight: bold;
-    font-size: 18px;
-    justify-content: center;
-    align-items: center;
-}
-
-.project-card h3 {
-    color: red;
+.titleCardComponent {
     font-family: 'Press Start 2P', cursive;
-    font-size: 20px;
-    font-weight: bold;
-
 }
 
-
-.project-card .link {
-    display: flex;
-    margin-top: 10px;
-    text-decoration: none;
-    color: black;
+/* Amélioration des cartes projet */
+.project-card {
+    border-radius: 12px;
     border: 4px solid white;
-    box-shadow: 2px 2px 2px 2px lightgray;
-    border-radius: 20px;
-    justify-content: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f5f5f5;
+    padding: 15px;
+    transition: transform 0.2s ease-in-out;
+    text-align: center;
+}
+
+/* Effet au survol */
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Optimisation des images */
+.project-card img {
+    width: 100%;
+    max-height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Style des liens */
+.project-card .link {
+    display: inline-flex;
     align-items: center;
-    height: 40px;
-    width: 200px;
-    gap: 15px;
-    font-family: 'Press Start 2P', cursive;
-    font-size: 12px;
-    
+    justify-content: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    color: white;
+    background: #ff6f61;
+    transition: background 0.3s ease-in-out;
 }
 
 .project-card .link:hover {
-    outline: 2px solid red;
-    cursor: pointer;
+    background: #d9584a;
 }
 
-.project-card .link svg {
-    font-size: 20px;
-    font-weight: 300;
-    margin-left: 10px;
+/* Style du texte */
+.project-card h3 {
+    color: #ff6f61;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
-.projectCardComponent h2{
-    font-family: 'Press Start 2P', cursive;
-}
-
-.Card {
-    display: flex;
-    flex-wrap: wrap;
+.project-description {
+    font-size: 14px;
+    color: #555;
 }

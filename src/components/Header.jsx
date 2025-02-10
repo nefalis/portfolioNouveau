@@ -1,10 +1,10 @@
 import React from 'react';
-import Landscape from '../../assets/landscape.png';
+import Landscape from '../assets/landscape.png';
 import { GiSeedling } from "react-icons/gi";
 
 const Header = () => {
     return (
-        <div className="border-8 border-white m-4 shadow-md rounded-2xl max-w-[1440px] w-full h-[250px] relative overflow-hidden">
+        <div className="border-8 border-white mx-auto shadow-md rounded-2xl max-w-[1200px] w-full h-[250px] relative overflow-hidden">
 
             <img 
                 className="absolute top-0 left-0 w-full h-full object-cover rounded-2xl opacity-50"
