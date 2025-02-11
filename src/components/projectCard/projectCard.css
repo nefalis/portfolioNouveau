@@ -1,68 +1,10 @@
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
-    justify-content: center;
-}
 
 .titleCardComponent {
     font-family: 'Press Start 2P', cursive;
 }
 
-/* Amélioration des cartes projet */
-.project-card {
-    border-radius: 12px;
-    border: 4px solid white;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    background-color: #f5f5f5;
-    padding: 15px;
-    transition: transform 0.2s ease-in-out;
-    text-align: center;
+
+.category-title {
+    font-family: 'Press Start 2P', cursive;
 }
 
-/* Effet au survol */
-.project-card:hover {
-    transform: translateY(-5px);
-}
-
-/* Optimisation des images */
-.project-card img {
-    width: 100%;
-    max-height: 180px;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-/* Style des liens */
-.project-card .link {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    font-size: 14px;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 8px 12px;
-    border-radius: 8px;
-    color: white;
-    background: #ff6f61;
-    transition: background 0.3s ease-in-out;
-}
-
-.project-card .link:hover {
-    background: #d9584a;
-}
-
-/* Style du texte */
-.project-card h3 {
-    color: #ff6f61;
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.project-description {
-    font-size: 14px;
-    color: #555;
-}
