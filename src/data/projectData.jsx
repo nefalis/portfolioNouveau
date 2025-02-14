@@ -25,8 +25,8 @@ const projectData = [
         description: "Portfolio actuel",
         stack: 'React - Tailwind - HTML',
         picture: Portfolio,
-        github: 'https://github.com/nefalis/Portfolio_Charron_Emilie',
-        link: 'portfolio-charron-e.vercel.app/'
+        github: 'https://github.com/nefalis/portfolio',
+        link: ' portfolio-charronemilie.vercel.app/ '
     },
     {
         title: 'Regulus',

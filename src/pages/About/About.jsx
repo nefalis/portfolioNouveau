@@ -1,29 +1,17 @@
 import React from 'react';
-
+import { useOutletContext } from 'react-router-dom';
 import './about.css';
 import AboutMe from '../../components/aboutMe';
 import timelineData from '../../data/timelineData';
-import Timeline from '../../components/Timeline';
+import TimelineAbout from '../../components/Timeline';
 import ButtonCv from '../../components/ButtonCv';
-import ImgTimeline from '../../assets/imgTimeline.png'
-
-
-/* Pour récuperer les infos à afficher dans le timeline*/
-const TimelineAbout = () =>
-    timelineData.length > 0 && (
-        <div className="timelineContainer m-8">
-            <img className='imgtimeline' src={ImgTimeline} alt='pixel art paysage'></img>
-            {timelineData.map((data, idx) => (
-                <Timeline data={data} key={idx} />
-            ))}
-        </div>
-    );
 
 
 const About = () => {
-    return (
-        <div className='aboutContainer'>
+    const { isOn } = useOutletContext();
 
+    return (
+        <div className={`aboutContainer ${isOn ? ' text-white' : ' text-black'}`}>
             <div className='containerAbout'>
                 <AboutMe />
             </div>
@@ -33,14 +21,12 @@ const About = () => {
             </div>
 
             <div className='timeline'>
-
-                <TimelineAbout />
+                {/* Passer isOn à TimelineAbout */}
+                <TimelineAbout isOn={isOn} timelineData={timelineData} />
             </div>
-
-
-
         </div>
     );
 };
 
 export default About;
+

@@ -1,34 +1,23 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom';
+import Home from "./pages/Home/Home";
+import About from "./pages/About/About";
+import Project from "./pages/Project/Project";
+import Error from "./pages/Error/Error";
+import Layout from "./pages/Layout";
 
-import Home from "./pages/Home/Home"
-import About from "./pages/About/About"
-import Project from "./pages/Project/Project"
-import Error from "./pages/Error/Error"
-import Layout from "./pages/Layout"
-
-const Router = () => {
+const Router = ({ isOn, setIsOn }) => {
     return (
         <Routes>
-
-            <Route element={<Layout />} >
-
-                {/* définie page par default*/}
+            <Route element={<Layout isOn={isOn} setIsOn={setIsOn} />}>
                 <Route index element={<Home />} />
-
                 <Route path='/home' element={<Home />} />
                 <Route path='/project' element={<Project />} />
                 <Route path='/about' element={<About />} />
-
-                {/*si trouve pas execute cette route*/}
                 <Route path='*' element={<Error />} />
-
             </Route>
-
         </Routes>
     );
 };
 
 export default Router;
-
-{/* <Route path='/project/:id' element={<Project />} /> */}

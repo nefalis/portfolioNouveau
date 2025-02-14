@@ -1,14 +1,23 @@
 import React from 'react';
+import { useOutletContext } from 'react-router-dom';
 import Mountain from '../assets/montagne.png';
 
 const AboutMe = () => {
+    const { isOn } = useOutletContext();
+
     return (
-        <div className="relative mx-auto mt-8 max-w-[1200px] rounded-2xl border-[10px] border-white bg-cyan-100 p-6 shadow-md font-['Press_Start_2P'] text-black">
+        <div 
+        className={`relative mx-auto mt-8 max-w-[1200px] rounded-2xl border-[10px] border-white bg-cyan-100 p-6 shadow-md font-['Press_Start_2P'] text-black
+            ${isOn ? 'bg-gray-800 text-white' : 'bg-transparent text-black'}`
+        }
+        >
+        {!isOn && (
             <img 
                 className="absolute left-0 top-0 h-full w-full rounded-2xl object-cover opacity-30"
                 src={Mountain} 
                 alt="pixel art montagne"
             />
+        )}
             
             <h1 className="relative text-xl md:text-2xl text-center">À propos de moi !</h1>
 
