@@ -1,5 +1,7 @@
 import React from "react";
+import { useOutletContext } from 'react-router-dom';
 import { FaBuilding, FaCalendarAlt } from "react-icons/fa";
+import TimelineImg from "../assets/imgTimeline.png"
 
 const Timeline = ({ data }) => {
     return (
@@ -39,19 +41,21 @@ const Timeline = ({ data }) => {
         </div>
     );
 };
+const TimelineAbout = ({ timelineData }) => {
+    const { isOn } = useOutletContext();
 
-const TimelineAbout = ({ isOn, timelineData }) => {
     return (
         <div className={`timelineContainer m-8 ${isOn ? 'bg-gray-800' : 'bg-transparent'}`}>
-            {/* Afficher l'image de fond si isOn est désactivé, sinon fond gris */}
-            <img 
-                className={`imgtimeline ${isOn ? 'opacity-50' : ''}`} 
-                src={timelineData.length > 0 ? timelineData[0]?.image : ''} 
-                alt='pixel art paysage' 
-            />
-            {timelineData.map((data, idx) => (
-                <Timeline data={data} key={idx} />
-            ))}
+            {timelineData.length > 0 && (
+                <div>
+                    {!isOn && (
+                        <img className='imgtimeline' src={TimelineImg} alt='pixel art paysage' />
+                    )}
+                    {timelineData.map((data, idx) => (
+                        <Timeline data={data} key={idx} />
+                    ))}
+                </div>
+            )}
         </div>
     );
 };
