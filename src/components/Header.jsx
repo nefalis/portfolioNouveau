@@ -26,7 +26,7 @@ const Header = ({ isOn, setIsOn }) => {
                 <h2 className="flex items-center gap-2 text-lg md:text-xl">
                     <GiSeedling className="text-4xl" /> Portfolio en cours de construction !
                 </h2>
-                <h3 className="text-sm md:text-base">MAJ 17/02/2025</h3>
+                <h3 className="text-sm md:text-base">MAJ 14/02/2025</h3>
             </div>
 
             {/* Boutons visibles sous le header si le sidebar est caché */}
