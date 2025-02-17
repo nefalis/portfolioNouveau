@@ -10,17 +10,19 @@
     padding: 8px 16px;
     cursor: pointer;
     font-weight: bold;
-    border: 1px solid black;
+    border: 2px solid;
     border-radius: 50px;
-    
+    transition: border-color 0.3s ease-in-out;
 }
 
 .on-off-button.on {
     color: blueviolet;
     font-weight: bold;
+    border-color: white;
 }
 
 .on-off-button.off {
     color: rgb(250, 18, 192);
     font-weight: bold;
+    border-color: black;
 }

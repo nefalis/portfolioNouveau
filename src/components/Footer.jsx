@@ -19,10 +19,10 @@ const Footer = ({ isOn }) => {  // Accepter isOn en tant que prop
             )}
 
             {/* Liens sociaux */}
-            <nav className="relative flex space-x-12">
+            <nav className={`relative flex space-x-12 ${isOn ? 'text-white' : 'text-black'}`}>
                 <a
                     href="mailto:charron.emily@gmail.com"
-                    className="text-5xl text-white transition-colors hover:text-red-500"
+                    className="text-5xl transition-colors hover:text-red-500"
                 >
                     <IoMdMail />
                 </a>
@@ -30,7 +30,7 @@ const Footer = ({ isOn }) => {  // Accepter isOn en tant que prop
                     href="https://www.linkedin.com/in/emiliec-devweb/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-5xl text-white transition-colors hover:text-red-500"
+                    className="text-5xl transition-colors hover:text-red-500"
                 >
                     <IoLogoLinkedin />
                 </a>
@@ -38,13 +38,13 @@ const Footer = ({ isOn }) => {  // Accepter isOn en tant que prop
                     href="https://github.com/nefalis"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-5xl text-white transition-colors hover:text-red-500"
+                    className="text-5xl transition-colors hover:text-red-500"
                 >
                     <IoLogoGithub />
                 </a>
             </nav>
 
-            <p className="relative font-['Press Start 2P'] text-center text-white">
+            <p className={`relative font-['Press Start 2P'] text-center ${isOn ? 'text-white' : 'text-black'}`}>
                 Copyright © Charron Emilie
             </p>
         </div>
@@ -52,4 +52,3 @@ const Footer = ({ isOn }) => {  // Accepter isOn en tant que prop
 };
 
 export default Footer;
-
