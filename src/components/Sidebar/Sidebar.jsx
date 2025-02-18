@@ -13,7 +13,7 @@ const audio = new Audio(pew);
 
 const Sidebar = ({ isOn, setIsOn }) => {
     return (
-        <div className={`min-h-screen border-10 border-white shadow-lg rounded-lg m-6 relative w-80 transition-all duration-500 hidden lg:block ${isOn ? 'hidden' : 'block'}`}>
+        <div className={`min-h-screen border-10 border-white shadow-lg rounded-lg m-6 relative w-80   transition-all duration-500 hidden lg:block ${isOn ? 'hidden' : 'block'}`}>
 
             <img className="absolute w-full h-full object-cover opacity-40 rounded-lg" src={ImgSidebar} alt="pixel art paysage" />
 

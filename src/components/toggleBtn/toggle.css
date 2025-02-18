@@ -19,6 +19,7 @@
     color: blueviolet;
     font-weight: bold;
     border-color: white;
+
 }
 
 .on-off-button.off {
@@ -26,3 +27,9 @@
     font-weight: bold;
     border-color: black;
 }
+
+.on-off-button:hover {
+    color: red;
+    cursor: pointer;
+}
+

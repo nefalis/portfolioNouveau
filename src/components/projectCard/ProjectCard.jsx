@@ -1,5 +1,5 @@
 import React from 'react';
-import { useOutletContext } from 'react-router-dom'; // Récupérer isOn du contexte
+import { useOutletContext } from 'react-router-dom';
 import { GiJellyfish, GiCurledTentacle } from "react-icons/gi";
 import projectData from '../../data/projectData';
 import './projectCard.css';
@@ -31,7 +31,7 @@ const ProjectCard = ({ title, description, stack, github, link, picture, isOn })
 };
 
 const ProjectCardItem = () => {
-    const { isOn } = useOutletContext(); // Récupérer le contexte isOn
+    const { isOn } = useOutletContext();
 
     const categories = ['Back-end', 'Applications CLI', 'Full-stack', 'Front-end'];
 
@@ -44,7 +44,7 @@ const ProjectCardItem = () => {
                         {projectData
                             .filter(project => project.category === category)
                             .map((project, index) => (
-                                <ProjectCard key={index} {...project} isOn={isOn} /> // Passer isOn ici
+                                <ProjectCard key={index} {...project} isOn={isOn} />
                             ))
                         }
                     </div>
