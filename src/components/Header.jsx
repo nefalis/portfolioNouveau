@@ -34,7 +34,7 @@ const Header = ({ isOn, setIsOn }) => {
             {isOn ? (
                 // Mode sombre : Afficher dans le header pour tous les écrans
                 <div className="relative flex flex-col items-center justify-center mt-4 space-y-4">
-                    <nav className="flex space-x-6 font-bold">
+                    <nav className="absolute flex space-x-6 font-bold">
                         <NavLink to='/home' className="bg-cyan-500 text-black px-4 py-2 rounded-lg cursor-pointer hover:bg-sky-700">Accueil</NavLink>
                         <NavLink to='/about' className="bg-cyan-500 text-black px-4 py-2 rounded-lg cursor-pointer hover:bg-sky-700">Présentation</NavLink>
                         <NavLink to='/project' className="bg-cyan-500 text-black px-4 py-2 rounded-lg cursor-pointer hover:bg-sky-700">Projets</NavLink>
@@ -44,7 +44,7 @@ const Header = ({ isOn, setIsOn }) => {
             ) : (
                 // Mode clair : Boutons et toggle cachés en PC (déplacés dans la sidebar)
                 <div className="lg:hidden flex flex-col items-center justify-center mt-4 space-y-4">
-                    <nav className="flex space-x-6 font-bold">
+                    <nav className="absolute flex space-x-6 font-bold">
                         <NavLink to='/home' className="bg-cyan-500 text-black px-4 py-2 rounded-lg cursor-pointer hover:bg-sky-700">Accueil</NavLink>
                         <NavLink to='/about' className="bg-cyan-500 text-black px-4 py-2 rounded-lg cursor-pointer hover:bg-sky-700">Présentation</NavLink>
                         <NavLink to='/project' className="bg-cyan-500 text-black px-4 py-2 rounded-lg cursor-pointer hover:bg-sky-700">Projets</NavLink>
