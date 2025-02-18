@@ -8,7 +8,7 @@ const ToggleButton = ({ isOn, setIsOn }) => {
     };
 
     return (
-        <div className="toggleComponent m-40">
+        <div className="toggleComponent mb-40">
             <h2 className="text-2xl font-bold">Changement d'univers</h2>
 
             <button 

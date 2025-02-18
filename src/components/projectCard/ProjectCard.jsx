@@ -1,12 +1,21 @@
 import React from 'react';
 import { useOutletContext } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { GiJellyfish, GiCurledTentacle } from "react-icons/gi";
 import projectData from '../../data/projectData';
 import './projectCard.css';
 
-const ProjectCard = ({ title, description, stack, github, link, picture, isOn }) => {
+const ProjectCard = ({ id, title, description, stack, github, link, pictures, isOn }) => {
+    const navigate = useNavigate();
+
+    const handleClick = () => {
+        navigate(`/project/${id}`);
+    };
+
     return (
-        <div className={`border-4 border-white rounded-xl shadow-md p-4 text-center transition-transform duration-200 ease-in-out hover:transform hover:translate-y-[-5px] 
+        <div 
+            onClick={handleClick} 
+            className={`border-4 border-white rounded-xl shadow-md p-4 text-center transition-transform duration-200 ease-in-out hover:transform hover:translate-y-[-5px] 
             ${isOn ? 'bg-gray-800 text-white' : 'bg-gray-100 text-black'}`}
         >
             <div className="my-4">
@@ -22,7 +31,7 @@ const ProjectCard = ({ title, description, stack, github, link, picture, isOn })
             </div>
 
             <div>
-                <img className="w-full max-h-[180px] object-cover rounded-lg" src={picture} alt={title} />
+                <img className="w-full max-h-[180px] object-cover rounded-lg" src={pictures[0]}  alt={title} />
                 <p className="text-sm">{description}</p>
                 <p className="font-bold text-sm">{stack}</p>
             </div>
@@ -44,7 +53,8 @@ const ProjectCardItem = () => {
                         {projectData
                             .filter(project => project.category === category)
                             .map((project, index) => (
-                                <ProjectCard key={index} {...project} isOn={isOn} />
+                                <ProjectCard key={project.id} id={project.id} {...project} isOn={isOn} />
+
                             ))
                         }
                     </div>
