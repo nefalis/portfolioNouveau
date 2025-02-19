@@ -1,15 +1,27 @@
 import Booki1 from '../assets/booki_1.jpg';
 import Booki2 from '../assets/booki_2.jpg';
-import Panthere from '../assets/panthere1.png';
-import Ohmyfood from '../assets/ohmyfood1.png';
+import Ohmyfood1 from '../assets/ohmyfood1.png';
+import Ohmyfood2 from '../assets/ohmyfood2.png';
+import Ohmyfood3 from '../assets/ohmyfood3.png';
 import Kanap1 from '../assets/kanap_1.jpg';
 import Kanap2 from '../assets/kanap_2.jpg';
-import Hottake from '../assets/hottake2.png'
+import Kanap3 from '../assets/kanap3.png';
+import Kanap4 from '../assets/kanap4.png';
+import Hottake2 from '../assets/hottake2.png'
+import Hottake1 from '../assets/hottake1.png'
 import Kasa1 from '../assets/kasa_1.jpg';
 import Kasa2 from '../assets/kasa_2.jpg';
+import Kasa3 from '../assets/kasa3.png';
 import JustStream1 from '../assets/JustStream_1.png'
+import JustStream2 from '../assets/JustStream_2.png'
+import JustStream3 from '../assets/JustStream_3.png'
 import Litrevu2 from '../assets/litrevu_2.png'
+import Litrevu1 from '../assets/litrevu_1.png'
+import Litrevu3 from '../assets/litrevu_4.png'
+import Litrevu4 from '../assets/litrevu_5.png'
 import Epicevent1 from '../assets/epicevent_1.png'
+import Epicevent2 from '../assets/epicevent_2.png'
+import Epicevent3 from '../assets/epicevent_3.png'
 import OCLettings1 from '../assets/oc_letting_1.png'
 import OCLettings2 from '../assets/oc_letting_2.png'
 import OCLettings3 from '../assets/oc_letting_3.png'
@@ -25,6 +37,7 @@ import Regulus1 from '../assets/regulus_1.png'
 import Regulus2 from '../assets/regulus_2.png'
 import Regulus3 from '../assets/regulus_3.png'
 import Port1 from '../assets/port1.png'
+import Port2 from '../assets/port2.png'
 import Portfolio from '../assets/portfolio.png'
 
 const projectData = [
@@ -33,7 +46,10 @@ const projectData = [
         title: 'Portfolio',
         category: 'Front-end',
         description: "Portfolio actuel",
-        stack: 'React - Tailwind - HTML',
+        descriptionDetail: `
+        Portfolio actuel
+        `,
+        stack: 'React - Tailwind - HTML- CSS',
         pictures: [Portfolio],
         github: 'https://github.com/nefalis/portfolio',
         link: ' portfolio-charronemilie.vercel.app/ '
@@ -124,8 +140,16 @@ const projectData = [
         title: 'EpicEvent',
         category: 'Applications CLI',
         description: "Système CRM en interface de ligne de commande de gestion d'événements",
-        stack: 'Python - MySQL - SQLAlchemy - JWT - Rich - Sentry - Pytest - JWT',
-        pictures: [Epicevent1],
+        descriptionDetail:`C'est un système CRM en CLI (interface de ligne de commande) de gestion d'événements. Il permet de créer, mettre à jour et supprimer des utilisateurs, des clients, des contrats et des événements. 
+        
+        L'application permet de :
+        - Les commerciaux démarchent les clients. Ils créent et mettent à jour leurs profils sur la plateforme.
+        - Lorsqu’un client souhaite organiser un événement, un collaborateur du département gestion crée un contrat et l’associe au client.
+        - Une fois le contrat signé, le commercial crée l’événement dans la plateforme
+        - Le département gestion désigne un membre du département support qui sera responsable de l’organisation et du déroulé de l’événement 
+        Tests unitaires et d'intégrations`,
+        stack: 'Python - MySQL - SQLAlchemy - JWT - Rich - Sentry - Pytest - JWT ',
+        pictures: [Epicevent1, Epicevent2, Epicevent3],
         github: 'https://github.com/nefalis/Epicevent',
     },
     {
@@ -133,8 +157,17 @@ const projectData = [
         title: 'LITRevu',
         category: 'Front-end',
         description: 'Application de critique de livre',
+        descriptionDetail:`LITRevu est une application qui permet aux utilisateurs de poster des critiques ou des demandes de critique sur des livres ou d'articles.  
+        
+        L'application permet de :
+        - se connecter ou de s'inscrire
+        - demander des critiques de livres ou d'articles 
+        - lire des critiques
+        - publier des critiques
+        - l'utilisateur peut suivre d'autres utilisateurs 
+        `,
         stack: 'Django - CSS - Tailwind',
-        pictures: [Litrevu2],
+        pictures: [Litrevu2, Litrevu1, Litrevu3, Litrevu4],
         github: 'https://github.com/nefalis/LITReview_P9',
     },
     {
@@ -142,8 +175,15 @@ const projectData = [
         title: 'JustStreamIt',
         category: 'Front-end',
         description: 'Application web qui répertorie et classe les films',
+        descriptionDetail:`Création d'une application web afin d'aider une association a monter en croissance. 
+        
+        Objectifs :
+        - Interface utilisateur pour une application web qui répertorie et classe les films en fonction de leur note.
+        - L'interface est composé de 5 parties : Meilleur film - Les films les mieux notés - Catégorie 1 - Catégorie 2 - Catégorie libre avec un menu déroulant pour choisir une catégorie. 
+        - La page se connecte à une API afin de récupérer les différentes informations. 
+        `,
         stack: 'HTML - CSS - JavaScript',
-        pictures: [JustStream1],
+        pictures: [JustStream1, JustStream2, JustStream3],
         github: 'https://github.com/nefalis/p6-JustStreamIt',
     },
     {
@@ -151,66 +191,78 @@ const projectData = [
         title: 'Booki',
         category: 'Front-end',
         description: 'Réalisation d\'un prototype conformément à la maquette.',
+        descriptionDetail:`L’entreprise souhaite développer un site Internet qui permette aux usagers de trouver des hébergements et des activités dans la ville de leur choix.
+        
+        Objectifs :
+        Ce projet a consisté a réaliser un prototype conformement à la maquette fournie en implémentant une interface responsive. 
+        `,
         stack: 'HTML - CSS - Responsive - Validation W3C',
-        pictures: [Booki1],
+        pictures: [Booki1, Booki2],
         github: 'https://github.com/nefalis/Booki-P2',
         link: 'https://nefalis.github.io/Booki-P2/'
     },
     {
         id: 11,
-        title: 'La Panthère',
-        category: 'Front-end',
-        description: 'Optimisation d\'un site existant. Amélioration de performance et accessibilité.',
-        stack: 'HTML - CSS - Lighthouse - SEO',
-        pictures: [Panthere],
-        github: 'https://github.com/nefalis/La-Panthere',
-        link: 'https://nefalis.github.io/La-Panthere/'
-    },
-    {
-        id: 12,
         title: '1er portfolio',
         category: 'Front-end',
         description: "Première version de mon protfolio",
+        descriptionDetail:`Première version de mon protfolio 
+        `,
         stack: 'HTML - CSS',
-        pictures: [Port1],
+        pictures: [Port1, Port2],
         github: 'https://github.com/nefalis/Portfolio_Charron_Emilie',
         link: 'portfolio-charron-e.vercel.app/'
     },
     {
-        id: 13,
+        id: 12,
         title: 'OhMyFood',
         category: 'Front-end',
         description: 'Conception d\'une page web en mobile first et en intégrant des animations.',
+        descriptionDetail:`Il s’agit d’une jeune startup qui voudrait s'imposer sur le marché de la restauration. La mission est de développer un site “mobile first” qui répertorie les menus de restaurants gastronomiques. 
+        `,
         stack: 'HTML - CSS - Sass - Responsive',
-        pictures: [Ohmyfood],
+        pictures: [Ohmyfood1, Ohmyfood2, Ohmyfood3,],
         github: 'https://github.com/nefalis/ohmyfood',
         link: 'https://nefalis.github.io/ohmyfood/'
     },
     {
-        id: 14,
+        id: 13,
         title: 'Kanap',
         category: 'Front-end',
         description: 'Construction du frontend d\'un site de e-commerce avec des données issues d\'une API.',
+        descriptionDetail:`Kanap est une marque de canapés qui vend ses produits depuis sa boutique exclusivement. Aujourd’hui, celle-ci souhaiterait avoir une plateforme de e-commerce en plus de sa boutique physique pour vendre ses produits sur Internet.  
+        
+        L'application permet de :
+        - ajouter des articles dans son panier
+        - modifier des article dans son panier
+        - supprimer des articles dans son panier
+        `,
         stack: 'HTML - CSS - JavaScript',
-        pictures: [Kanap1],
+        pictures: [Kanap1, Kanap2, Kanap3, Kanap4],
         github: 'https://github.com/nefalis/Kanap'
     },
     {
-        id: 15,
+        id: 14,
         title: 'Hot Takes',
         category: 'Back-end',
         description: 'Mise en place d\'une API sécurisée avec NodeJS et Express.',
+        descriptionDetail:`
+        Construction d'une API en backend pour le site HOT TAKES, galerie de sauces permettant aux utilisateurs de télécharger leurs sauces piquantes préférées et de liker ou disliker les sauces que d'autres partagent.
+        `,
         stack: 'HTML - CSS - MongoDB - Express - NodeJS',
-        pictures: [Hottake],
+        pictures: [Hottake2, Hottake1],
         github: 'https://github.com/nefalis/Projet-6'
     },
     {
-        id: 16,
+        id: 15,
         title: 'Kasa',
         category: 'Front-end',
         description: 'Création d\'une application avec React en suivant une maquette Figma.',
+        descriptionDetail:`
+        Création d\'une application avec React en suivant une maquette Figma.
+        `,
         stack: 'HTML - CSS - React',
-        pictures: [Kasa1],
+        pictures: [Kasa1, Kasa2, Kasa3],
         github: 'https://github.com/nefalis/projet-7',
         link: 'https://projet-7-five.vercel.app/'
     }
