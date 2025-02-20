@@ -52,7 +52,7 @@ const projectData = [
         stack: 'React - Tailwind - HTML- CSS',
         pictures: [Portfolio],
         github: 'https://github.com/nefalis/portfolio',
-        link: ' portfolio-charronemilie.vercel.app/ '
+        link: ' https://portfolio-charronemilie.vercel.app/ '
     },
     {
         id: 2,
