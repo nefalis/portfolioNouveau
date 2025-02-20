@@ -211,7 +211,7 @@ const projectData = [
         stack: 'HTML - CSS',
         pictures: [Port1, Port2],
         github: 'https://github.com/nefalis/Portfolio_Charron_Emilie',
-        link: 'https://portfolio-charron-e.vercel.app/'
+        link: 'https://nefalis.github.io/Portfolio_Charron_Emilie/'
     },
     {
         id: 12,
