@@ -3,6 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { useOutletContext } from 'react-router-dom';
 import { FaArrowLeft } from 'react-icons/fa';
 import projectData from '../data/projectData';
+import projectclear from '../assets/projectclear.png'
 
 const ProjectDetail = () => {
     const { id } = useParams();
@@ -16,8 +17,13 @@ const ProjectDetail = () => {
     }
 
     return (
-        <div className={`relative max-w-3xl mx-auto p-6  border-4 border-white rounded-lg shadow-md mt-10  ${isOn ? 'bg-gray-500 text-black' : 'bg-sky-300 text-black'}`}>
-
+        <div className="relative max-w-3xl mx-auto p-6 border border-gray-300 rounded-lg shadow-lg mt-10">
+            {/* Image de fond */}
+            <img 
+                className="absolute inset-0 w-full h-full object-cover opacity-50 rounded-lg z-0" 
+                src={projectclear} 
+                alt="pixel art paysage" 
+            />
             {/* Contenu principal avec un z-index plus élevé */}
             <div className="relative z-10">
                 {/* Bouton retour */}

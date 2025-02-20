@@ -7,7 +7,7 @@ import ToggleButton from '../components/toggleBtn/ToggleBtn';
 const Header = ({ isOn, setIsOn }) => {
     return (
         <div 
-            className={`border-8 border-white mx-auto shadow-md rounded-2xl max-w-[1200px] w-full h-[200px] relative overflow-hidden transition-all duration-500`}
+            className={`border-8 border-white mx-auto shadow-md rounded-2xl max-w-[1400px] w-full h-[200px] relative overflow-hidden transition-all duration-500`}
         >
             <img 
                 className="absolute top-0 left-0 w-full h-full object-cover rounded-2xl opacity-50 transition-all duration-500"

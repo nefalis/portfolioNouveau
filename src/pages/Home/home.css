@@ -75,3 +75,35 @@
 
     }
 }
+
+/* Adaptation pour les très grands écrans */
+@media (min-width: 1440px) {
+    .home {
+        max-width: 1600px; /* Augmente la largeur max */
+        padding: 50px;
+    }
+
+    .presentation {
+        width: 80%; /* Réduit la largeur pour éviter trop d’étalement */
+        max-width: 1200px;
+    }
+
+    .buttonCvHome {
+        width: 50%;
+        height: 70px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .home {
+        max-width: 1800px;
+    }
+
+    .presentation {
+        width: 70%;
+    }
+
+    .buttonCvHome {
+        height: 80px;
+    }
+}
