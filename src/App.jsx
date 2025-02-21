@@ -6,7 +6,7 @@ import './App.css';
 function App() {
 
   const [isOn, setIsOn] = useState(() => {
-    return localStorage.getItem("theme") === "dark";
+    return localStorage.getItem("theme") === "dark" ? true : false;
   });
 
   useEffect(() => {

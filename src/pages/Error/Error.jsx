@@ -6,11 +6,9 @@ import './error.css'
 const Error = () => {
     return (
 
-        <div class="container404">
-
-            <img className="imagePage404" src={Img404} alt='pixel art paysage'></img>
-
-        </div>
+    <div className="container404">
+        <img className="imagePage404" src={Img404} alt='pixel art paysage' />
+    </div>
     );
 };
 
