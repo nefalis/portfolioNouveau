@@ -6,7 +6,6 @@ import TimelineImg from "../assets/imgTimeline.png"
 const Timeline = ({ data }) => {
     return (
         <div className="relative w-full max-w-xl mx-auto my-6 p-6 bg-white shadow-lg border-l-4 border-red-500 rounded-lg">
-            {/* Tag en haut */}
             <span
                 className="absolute top-2 left-2 px-3 py-1 text-xs font-bold text-white rounded"
                 style={{ backgroundColor: data.category.color }}
@@ -14,10 +13,8 @@ const Timeline = ({ data }) => {
                 {data.category.tag}
             </span>
 
-            {/* Titre du poste */}
             <h2 className="text-xl font-bold">{data.job}</h2>
 
-            {/* Date et entreprise */}
             <div className="flex items-center space-x-4 text-gray-600">
                 <FaCalendarAlt className="text-lg" />
                 <time className="text-sm">{data.date}</time>
@@ -27,12 +24,10 @@ const Timeline = ({ data }) => {
                 <h3 className="text-sm font-semibold">{data.entreprise}</h3>
             </div>
 
-            {/* Description */}
             {data.description && (
                 <p className="mt-2 text-gray-700 text-sm">{data.description}</p>
             )}
 
-            {/* Compétences */}
             {data.competence && (
                 <p className="mt-2 text-xs font-semibold text-gray-800">
                     {data.competence}

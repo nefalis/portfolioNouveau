@@ -11,7 +11,6 @@ const ButtonCv = () => {
         <div className={`relative flex items-center justify-center gap-5 border-10 border-white shadow-md rounded-lg m-10 w-4/5 transition-all duration-500 
             ${isOn ? 'bg-gray-800 text-white' : 'bg-transparent text-black'}`}
         >
-            {/* Image de fond : affichée seulement si isOn est false */}
             {!isOn && (
                 <img 
                     className={`absolute w-full h-full object-cover opacity-40 rounded-lg transition-opacity duration-500 ${isOn ? 'hidden' : 'block'}`} 

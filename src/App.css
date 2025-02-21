@@ -19,11 +19,3 @@ body {
 .layout {
   flex: 1;
 }
-
-/* .header, .footer {
-  grid-column: 1 / -1;
-}
-
-.headerContainer {
-  grid-column: 1/3;
-} */

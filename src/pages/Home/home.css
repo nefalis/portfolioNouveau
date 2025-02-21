@@ -79,12 +79,12 @@
 /* Adaptation pour les très grands écrans */
 @media (min-width: 1440px) {
     .home {
-        max-width: 1600px; /* Augmente la largeur max */
+        max-width: 1600px;
         padding: 50px;
     }
 
     .presentation {
-        width: 80%; /* Réduit la largeur pour éviter trop d’étalement */
+        width: 80%;
         max-width: 1200px;
     }
 

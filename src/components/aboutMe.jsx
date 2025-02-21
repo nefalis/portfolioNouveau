@@ -23,7 +23,7 @@ const AboutMe = () => {
 
             <h2 className="relative mt-12 text-lg text-red-500">Actuellement</h2>
             <p className="relative leading-5">
-                Développeuse web fullstack, je maîtrise aussi bien le front-end que le back-end.
+                Développeuse fullstack, je maîtrise aussi bien le front-end que le back-end.
                 <span className="block">Après une reconversion professionnelle, il m’a semblé naturel de m’orienter vers ce domaine qui allie créativité, logique et résolution de problèmes. </span>
             </p>
 

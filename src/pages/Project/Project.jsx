@@ -1,9 +1,6 @@
 import React from 'react';
-
 import './project.css';
-
 import ProjectCard from '../../components/projectCard/ProjectCard';
-
 
 const Project = () => {
     return (

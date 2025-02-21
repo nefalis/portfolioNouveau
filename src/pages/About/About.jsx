@@ -21,7 +21,6 @@ const About = () => {
             </div>
 
             <div className='timeline'>
-                {/* Passer isOn à TimelineAbout */}
                 <TimelineAbout isOn={isOn} timelineData={timelineData} />
             </div>
         </div>

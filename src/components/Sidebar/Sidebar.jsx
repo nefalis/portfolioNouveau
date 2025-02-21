@@ -43,6 +43,7 @@ const Sidebar = ({ isOn, setIsOn }) => {
                             <GiRoundBottomFlask className="icon" /> Projets
                         </NavLink>
                     </li>
+                    
                 </ul>
             </nav>
         </div>
