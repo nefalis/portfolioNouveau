@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import Router from './Route';
 import './App.css';
 
@@ -15,11 +15,12 @@ function App() {
 
   return (
     <div className={`App ${isOn ? 'bg-gray-900 text-white' : 'bg-white text-black'}`}>
-      <BrowserRouter>
+      <HashRouter>
         <Router isOn={isOn} setIsOn={setIsOn} />
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
 
 export default App;
+
